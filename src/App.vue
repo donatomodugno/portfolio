@@ -21,9 +21,9 @@ export default {
 <template>
     <div class="row j-center">
         <div class="col j-center" id="container">
-            <Header v-model:activePage="activePage" :links="Object.keys(pagesTree)"/>
+            <Header v-model:activePage="activePage" :links="Object.keys(pagesTree)"></Header>
             <Page :activePage="activePage"/>
-            <Footer/>
+            <Footer></Footer>
         </div>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <hr class="separator"/>
     <div id="footer">
-        Donato Modugno (c) 2024
+        <slot>Donato A. Modugno © 2024</slot>
     </div>
 </template>

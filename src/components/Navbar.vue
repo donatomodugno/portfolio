@@ -1,6 +1,6 @@
 <script>
 export default {
-    props:['activePage','links'],
+    props:['links'],
     emits:['update:activePage'],
 }
 </script>

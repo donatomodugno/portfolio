@@ -1,19 +1,24 @@
 <script>
-import Home from '../pages/Home.vue'
-import Progetti from '../pages/Progetti.vue'
-import Contatti from '../pages/Contatti.vue'
+import home from '../pages/Home.vue'
+import progetti from '../pages/Progetti.vue'
+import contatti from '../pages/Contatti.vue'
 export default {
     components:{
-        home:Home,
-        progetti:Progetti,
-        contatti:Contatti,
+        home,
+        progetti,
+        contatti,
     },
     props:['activePage'],
+    methods:{
+        capitalize(string) {
+            return string[0].toUpperCase()+string.slice(1)
+        },
+    },
 }
 </script>
 
 <template>
-    Pagina {{activePage}}
+    <b>{{capitalize(activePage)}}</b>
     <div id="page">
         <component :is="activePage"></component>
     </div>
