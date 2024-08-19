@@ -10,7 +10,9 @@ export default {
             activePage:'home',
             pagesTree:{
                 'home':{},
-                'progetti':{},
+                'progetti':{
+                    'archivio':{},
+                },
                 'contatti':{},
             },
         }
@@ -21,7 +23,11 @@ export default {
 <template>
     <div class="row j-center">
         <div class="col j-center" id="container">
-            <Header v-model:activePage="activePage" :links="Object.keys(pagesTree)"></Header>
+            <Header
+                :activePage="activePage" @update:activePage="activePage = $event"
+                :links="Object.keys(pagesTree)"
+                :path="['Archivio','Arc1','Arc2','Arc3','ArcProva']"
+            ></Header>
             <Page :activePage="activePage"/>
             <Footer></Footer>
         </div>

@@ -13,6 +13,8 @@ body {
 }
 a {
     color:var(--white);
+    text-decoration:underline;
+    cursor:pointer;
 }
 a:hover {
     color:var(--light);
@@ -73,9 +75,8 @@ a:hover {
     width:100%;
 }
 #breadcrumb {
-    margin-top:40px;
+    margin-top:16px;
     text-transform:capitalize;
-    font-size:120%;
 }
 #footer {
     text-align:center;

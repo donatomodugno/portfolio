@@ -4,7 +4,7 @@ import Breadcrumb from './Breadcrumb.vue'
 </script>
 <script>
 export default {
-    props:['links','activePage'],
+    props:['links','activePage','path'],
     emits:['update:activePage'],
     data() {
         return {
@@ -21,6 +21,10 @@ export default {
             <h3 class="m-0">&nbsp;Software developer</h3>
         </div>
     </div>
-    <Navbar :links="links" :activePage="activePage" @update:activePage="$emit('update:activePage',$event)"/>
-    <!-- <Breadcrumb :path="links"/> -->
+    <Navbar
+        @update:activePage="$emit('update:activePage',$event)"
+        :links="links"
+    />
+    <!-- <Breadcrumb :path="[activePage,...path]"/> -->
+    <Breadcrumb :path="[activePage]"/>
 </template>
