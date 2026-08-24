@@ -1,5 +1,5 @@
 <template>
-    <p>
+    <div>
         <p>Individuali</p>
         <ul>
             <li>
@@ -11,7 +11,8 @@
         <ul>
             <li><a href="https://github.com/WEEE-Open/skeeelled">[WEEE Open] skeeelled</a></li>
             <li><a href="https://github.com/WEEE-Open/grillo">[WEEE Open] grillo</a></li>
+            <li><a href="https://github.com/WEEE-Open/limone">[WEEE Open] limone</a></li>
         </ul>
         <a @click="">Archivio</a>
-    </p>
+    </div>
 </template>
